@@ -27,7 +27,6 @@ const Navbar = () => {
         <div className="nav-header">
            {/** <img src='' alt="logo" />*/}
             <h2>acherOps Inc.</h2>
-
             <button className='nav-toggle' onClick={()=>(
                  /**console.log(!showLinks) = true */
                 setShowLinks(!showLinks)

@@ -45,3 +45,17 @@ export const social = [
     icon: <FaBehance />,
   },
 ]
+export const signDetails =[
+  {
+    id:1,
+    url:'#',
+    image:'#',
+    text:'Login'
+  },
+  {
+    id:1,
+    url:'#',
+    image:'#',
+    text:'Sign Up'
+  }
+]
