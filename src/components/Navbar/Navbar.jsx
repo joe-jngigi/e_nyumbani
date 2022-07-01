@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { FaBars} from 'react-icons/fa'
-import { links, social } from './data'
+import { links, social } from '../../data'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -51,18 +51,6 @@ const Navbar = () => {
                    }
                 </ul>
         </div>
-        <ul className="social-icons">
-            {
-                social.map((socLink) =>{
-                    const{id, url, icon} = socLink
-                    return(
-                        <li key={id}>
-                            <a href={url}>{icon}</a>
-                        </li>
-                    )
-                })
-            }
-        </ul>
     </div>
     </nav>
     </>
