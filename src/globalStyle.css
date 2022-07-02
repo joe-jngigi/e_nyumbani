@@ -222,7 +222,7 @@ p {
   padding: 4rem;
 }
 
-/**/
+/*Buttons*/
 .btn {
   display: inline-block;
   padding: 10px 30px;
@@ -242,4 +242,9 @@ p {
 .btn-outline {
   background-color: transparent;
   border: solid var(--foreColor) 1px;
+}
+/*Center Container*/
+.cent-container{
+  max-width: 1170px;
+  margin: 0 auto;
 }

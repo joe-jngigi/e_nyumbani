@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { FaBars} from 'react-icons/fa'
-import { links, social } from '../../data'
+import { links} from '../../data'
 import './Navbar.css'
 
 const Navbar = () => {
