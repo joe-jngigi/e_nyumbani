@@ -55,7 +55,7 @@ Global Styles
   --clr-black: #222;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
-  --radius: 0.25rem;
+  --radius: 0.50rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   --max-width: 1170px;
@@ -84,7 +84,7 @@ ul {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 h1,
@@ -221,18 +221,27 @@ p {
 .p-5 {
   padding: 4rem;
 }
+.underline {
+  margin: 20px 0px 20px 0px ;
+  width: 6rem;
+  height: 0.25rem;
+  background: #49a6e9;
+  background-color: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*Buttons*/
 .btn {
   display: inline-block;
   padding: 10px 30px;
-  width: 140px;
-  background-color: var(--glr-primary-6);
+  width: auto;
+  background-color: var(--clr-primary-5);
   color: var(--foreColor);
-  border: solid var(--clr-pink);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
   outline: none;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: var(--radius);
 }
 
 .btn:hover {
@@ -247,4 +256,5 @@ p {
 .cent-container{
   max-width: 1170px;
   margin: 0 auto;
+
 }
