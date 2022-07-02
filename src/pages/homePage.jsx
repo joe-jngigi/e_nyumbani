@@ -1,3 +1,4 @@
+import FeaturedProducts from "../components/featuredProducts/featuredProducts";
 import HeadSec from "../components/Home_section_one/headSection";
 
 const HomePage = () =>{
@@ -5,6 +6,7 @@ const HomePage = () =>{
         <>
         <div>
             <HeadSec/>
+            <FeaturedProducts/>
         </div>
         </>
     )
