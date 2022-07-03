@@ -1,3 +1,4 @@
+/*HEADER SECTION ONE*/
 .headingSection {
     min-height: 60vh;
     display: grid;
@@ -11,7 +12,12 @@
     letter-spacing: var(--spacing) !important;
     text-transform: uppercase !important;
 }
+/*SECTION THREE PROFILE*/
+.p-section {
+    background-color: var(--clr-primary-9);
+}
 @media screen and  (min-width: 800px){
+    /*HEADER SECTION ONE*/
     .img-container, .content {
 
         padding: 20px;
@@ -41,5 +47,10 @@
         left: -8%;
         border-radius: var(--radius);
     }
-    
+        /*SECTION THREE PROFILE*/
+    .h-profile{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
 }

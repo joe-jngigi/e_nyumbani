@@ -15,7 +15,7 @@
     bottom: 10px;
 }
 .lets-talk{
-    background-color: var(--clr-primary-10);
+    background-color: var(--clr-primary-9);
 }
 
 /*Lets Talk section*/
@@ -38,7 +38,7 @@
         margin: 0px auto 1rem;
         place-items: center;
         border-radius: 50%;
-        background: var(--clr-primary-10);
+        background: var(--clr-primary-9);
         color: var(--clr-primary-1);
     }
     .talk {
@@ -46,7 +46,7 @@
         flex-direction: column;
         height: 350px;
         margin: 20px;
-        background-color: var(--clr-primary-9);
+        background-color: var(--clr-primary-7);
         border-radius: var(--radius);
         padding: 2.5rem 2rem;
         text-align: center;

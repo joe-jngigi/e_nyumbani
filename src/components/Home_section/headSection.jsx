@@ -1,4 +1,4 @@
-import './headSection.css'
+import './homepage.css'
 import lux_img from '../../resources/luxuryproperty.jpg'
 import prop_img from '../../resources/largepropertysale.jpg'
 const HeadSec = () =>{
