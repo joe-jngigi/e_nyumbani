@@ -1,6 +1,4 @@
-import FeaturedProducts from "../components/featuredProducts/featuredProducts";
-import HeadSec from "../components/Home_section_one/headSection";
-
+import {HeadSec, FeaturedProducts} from '../components/utilsActions/imports'
 const HomePage = () =>{
     return(
         <>

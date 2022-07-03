@@ -1,0 +1,62 @@
+.about-content{
+    height: 80%;
+    position: relative;
+}
+.a-underline {
+    margin: 20px 0px 20px 0px;
+    width: 5rem;
+    height: 0.25rem;
+    background: #49a6e9;
+    background-color: var(--clr-primary-7);
+}
+.about-content h3{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+.lets-talk{
+    background-color: var(--clr-primary-10);
+}
+
+/*Lets Talk section*/
+@media screen and (min-width:800px) {
+    .lets-talk h2 {
+        text-align: center;
+    }
+    .lets-talk .p {
+        text-align: center;
+    }
+    .talk-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+    }
+    .main-icon{
+        width: 4rem;
+        height: 4rem;
+        display: grid;
+        margin: 0px auto 1rem;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--clr-primary-10);
+        color: var(--clr-primary-1);
+    }
+    .talk {
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        margin: 20px;
+        background-color: var(--clr-primary-9);
+        border-radius: var(--radius);
+        padding: 2.5rem 2rem;
+        text-align: center;
+
+    }
+    .e-talk{
+        align-items: center;
+    }
+    .lets-talk .talk-content>*:nth-child(4){
+        grid-column: 1 / span 3;
+    }
+
+}
