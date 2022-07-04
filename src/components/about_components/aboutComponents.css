@@ -31,27 +31,7 @@
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-evenly;
     }
-    .main-icon{
-        width: 4rem;
-        height: 4rem;
-        display: grid;
-        margin: 0px auto 1rem;
-        place-items: center;
-        border-radius: 50%;
-        background: var(--clr-primary-9);
-        color: var(--clr-primary-1);
-    }
-    .talk {
-        display: flex;
-        flex-direction: column;
-        height: 350px;
-        margin: 20px;
-        background-color: var(--clr-primary-7);
-        border-radius: var(--radius);
-        padding: 2.5rem 2rem;
-        text-align: center;
 
-    }
     .e-talk{
         align-items: center;
     }

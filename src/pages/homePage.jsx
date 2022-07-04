@@ -1,4 +1,4 @@
-import {HeadSec, FeaturedProducts, Profile} from '../components/utilsActions/imports'
+import {HeadSec, FeaturedProducts, Profile, DealSect} from '../components/utilsActions/imports'
 const HomePage = () =>{
     return(
         <>
@@ -6,6 +6,7 @@ const HomePage = () =>{
             <HeadSec/>
             <FeaturedProducts/>
             <Profile/>
+            <DealSect/>
         </div>
         </>
     )

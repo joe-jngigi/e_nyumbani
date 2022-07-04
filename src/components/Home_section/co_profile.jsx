@@ -2,7 +2,7 @@ import React from 'react'
 
 function Profile() {
   return (
-    <section className="p-section py-2">
+    <section className="p-section">
         <main className="cent-container">
             <article className='h-profile'>
                 <h3>Get the best deals <br />
@@ -15,7 +15,7 @@ function Profile() {
                 </p>
             </article>
             <div className="s-profile talk-content">
-                <article className="talk">
+                <article className="talk p-talk">
                     <div className='main-icon'>icon</div>
                     <h4>Mission</h4>
                     <p>Lorem ipsum dolor sit amet consectetur
@@ -24,7 +24,7 @@ function Profile() {
                          eritatis. Harum, provident voluptate?
                     </p>
                 </article>
-                 <article className="talk">
+                 <article className="talk p-talk">
                     <div className='main-icon'>icon</div>
                     <h4>Vision</h4>
                     <p>Lorem ipsum dolor sit amet consectetur
@@ -33,7 +33,7 @@ function Profile() {
                          eritatis. Harum, provident voluptate?
                     </p>
                 </article>
-                 <article className="talk">
+                 <article className="talk p-talk">
                     <div className='main-icon'>icon</div>
                     <h4>Goal</h4>
                     <p>Lorem ipsum dolor sit amet consectetur

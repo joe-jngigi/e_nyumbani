@@ -7,6 +7,7 @@ import Loading from './loading'
 import AboutUs from "../about_components/aboutUs"
 import Letstalk from "../about_components/talkToUs"
 import Profile from "../Home_section/co_profile"
+import DealSect from "../Home_section/deals_subscribe"
 export{
     FeaturedProducts,
     Navbar,
@@ -17,4 +18,5 @@ export{
     AboutUs,
     Letstalk,
     Profile,
+    DealSect,
 }

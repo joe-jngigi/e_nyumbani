@@ -16,6 +16,27 @@
 .p-section {
     background-color: var(--clr-primary-9);
 }
+.h-profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+ /*SECTION FOUR PROFILE*/
+.sect-deal {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.head-sect,.subscribe{
+    padding: 2rem;
+}
+.head-sect{
+    position: relative;
+}
+.head-sect .share-icon{
+    position: absolute;
+    bottom: 0;
+    right: 3rem;
+}
+
 @media screen and  (min-width: 800px){
     /*HEADER SECTION ONE*/
     .img-container, .content {
@@ -49,8 +70,23 @@
     }
         /*SECTION THREE PROFILE*/
     .h-profile{
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 2rem;
+        padding-top: 2rem;
+    }
+    .s-profile{
+        transform: translateY(5rem);
+    }
+         /*SECTION FOUR PROFILE*/
+    .deal-sect{
+        padding-top: 15rem;
+        padding-bottom: 10rem;
+    }
+    .sect-deal{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sect-deal .main-icon{
+        margin: 0.875rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
