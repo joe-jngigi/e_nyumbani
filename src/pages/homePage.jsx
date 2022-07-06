@@ -1,4 +1,5 @@
 import {HeadSec, FeaturedProducts, Profile, DealSect} from '../components/utilsActions/imports'
+
 const HomePage = () =>{
     return(
         <>

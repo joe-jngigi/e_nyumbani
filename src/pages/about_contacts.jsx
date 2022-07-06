@@ -1,9 +1,10 @@
-import { AboutUs, Letstalk } from '../components/utilsActions/imports'
+import { AboutUs, Faqsaccordion, Letstalk } from '../components/utilsActions/imports'
 const About = () =>{
     return(
         <wrapper>
             <AboutUs/>
             <Letstalk/>
+            <Faqsaccordion/>
         </wrapper>
     )
 }

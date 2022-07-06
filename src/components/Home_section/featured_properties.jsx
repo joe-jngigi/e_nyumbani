@@ -1,7 +1,6 @@
 import { Error, Loading } from "../utilsActions/imports"
 import { Link } from "react-router-dom"
 import { products_url } from "../../data"
-import './featuredProducts.css'
 const FeaturedProducts = () =>{
     return(
         <section className = 'wrap-around py-5'>

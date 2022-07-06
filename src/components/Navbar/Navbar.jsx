@@ -3,6 +3,7 @@ import { FaBars} from 'react-icons/fa'
 import { links} from '../../data'
 import './Navbar.css'
 import {Routes, Route, Link} from 'react-router-dom'
+
 const Navbar = () => {
     const [showLinks, setShowLinks] = useState(false)
 
@@ -50,6 +51,14 @@ const Navbar = () => {
                     })
                    }
                 </ul>
+        </div>
+        <div className="log-user">
+            <Link className='host' to ='#'>
+                Become a Host
+            </Link>
+            <Link to = '#'>
+                <a href="#" className='login-btn' >icon</a>
+            </Link>
         </div>
     </div>
     </nav>
