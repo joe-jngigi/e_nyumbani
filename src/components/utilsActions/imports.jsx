@@ -16,6 +16,8 @@ import ListingHeader from "../property_listing/head_property_list"
 
 import Propertygallery from "../about_property/property_gallery"
 import PropertyDesc from "../about_property/property_description"
+
+import Bookingcard from "./booking_card"
 export{
     FeaturedProducts,
     Navbar,
@@ -32,4 +34,5 @@ export{
     Propertygallery,
     PropertyDesc,
     ListingHeader,
+    Bookingcard,
 }

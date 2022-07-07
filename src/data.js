@@ -212,6 +212,29 @@ export const faqQuestions = [
       'In this case, the guest is fully refunded or offered a similar listing.'
   },
 ]
+export const guestCount =[
+  {
+    id: 1,
+    text: 'Adult',
+    count: 0,
+  },
+  {
+    id: 3,
+    text: 'Children',
+    count: 0,
+  },
+  {
+    id: 3,
+    text: 'Infants',
+    count: 0,
+  },
+  {
+    id: 4,
+    text: 'Pets',
+    count: 0,
+  },
+
+]
 
 export const products_url = 'https://course-api.com/react-store-products'
 
