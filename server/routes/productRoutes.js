@@ -1,8 +1,15 @@
 const express = require("express");
 const router = express.Router();
-const { createProducts } = require("../controllers/productControllers");
+const {
+  getProducts,
+  createProducts,
+  getProduct,
+  deleteProduct,
+  updateProduct,
+} = require("../controllers/productControllers");
 
 /* GET home page. */
-router.get("/", createProducts);
+router.route("/").get(getProducts).post(createProducts);
+router.route("/:id").get(getProduct).delete(deleteProduct).put(updateProduct);
 
 module.exports = router;
