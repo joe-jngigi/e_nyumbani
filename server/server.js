@@ -1,16 +1,16 @@
-var express = require("express");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
+const express = require("express");
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
 const connectDB = require("./config/db");
 const dotenv = require("dotenv").config();
 const colors = require("colors");
 const { errorHandler } = require("./middleware/errorMiddleware");
 
-var app = express();
+const app = express();
 // listen port.
 const PORT = process.env.PORT || 5000;
 // connect db
-// connectDB();
+connectDB();
 
 //  view engine setup
 // app.set('views', path.join(__dirname, 'views'));
