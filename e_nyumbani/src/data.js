@@ -212,20 +212,103 @@ export const faqQuestions = [
       'In this case, the guest is fully refunded or offered a similar listing.'
   },
 ]
+export const propertyFeatures =[
+  {
+    id: 1,
+    heading: 'Amenities', 
+    item1:  [
+    'Internet and WiFi',
+    'TV',
+    'Air conditioning',
+    'Private fully equped kitchen',
+    'Long term stays allowed',
+]
+  },
+  {
+    id: 2,
+    heading: 'Bed & Bath',
+    item1:[
+    'linen',
+    'Ensuite',
+    'bathroomsHangers',
+  ]
+  },
+  {
+    id: 2,
+    heading: 'Facilities',
+    item1:[
+    'Free Parking on Premises',
+    ' Airport Shuttle',
+    'Housekeeping',
+    'Elevator in Building',
+    'Gym',
+    'Pool',]
+  },
+  {
+    id: 3,
+    heading: 'Security Features',
+    item1:'Doorman',
+    item2:'CCTV',
+    item3:'Security dogs',
+    item4:'Electric fence',
+  },
+  {
+    id: 4,
+    heading: 'Terms and Conditions',
+    item1:'No smoking',
+    item1:'No parties allowed',
+    item1:'Pets are allowed',
+  },
+]
+export const eachpropertyFeatures =[
+
+  [
+    'Internet and WiFi',
+    'TV',
+    'Air conditioning',
+    'Private fully equped kitchen',
+    'Long term stays allowed',
+],
+  {
+    id: 2,
+    item1:['Free Parking on Premises',
+    ' Airport Shuttle',
+    'Housekeeping',
+    'Elevator in Building',
+    'Gym',
+    'Pool',]
+  },
+  {
+    id: 3,
+    item1:'Doorman',
+    item2:'CCTV',
+    item3:'Security dogs',
+    item4:'Electric fence',
+  },
+  {
+    id: 4,
+    item1:'No smoking',
+    item1:'No parties allowed',
+    item1:'Pets are allowed',
+  },
+]
 export const guestCount =[
   {
     id: 1,
     text: 'Adult',
+    age: '16+',
     count: 0,
   },
   {
     id: 3,
     text: 'Children',
+    age: '3-15',
     count: 0,
   },
   {
     id: 3,
     text: 'Infants',
+    age:'Under 2',
     count: 0,
   },
   {
@@ -233,6 +316,23 @@ export const guestCount =[
     text: 'Pets',
     count: 0,
   },
+]
+export const ownerInfo =[
+    {
+    id: 1,
+    name:'Joe_J',
+    about:
+    'I was born in 1978 in Izmir. After I have graduated Tourism and Hotel Management, I have worked at various departments in tourism sector'
+    +'from house keeping to guest relations. At the moment I perform the customer services and Airbnb Channel Management of LookBookHoliday, a TURSAB A group travel agency as a part of of Malli Tourism and Travel LLC. I manage more than 1200 directly contacted properties. I am living in Fethiye and married with three lovely children.'
+    +'I like exploring new places and tastes. I take gastronomic trips with my family. I support environmental NGOs as social responsibility.',
+    review_count: 0,
+    disclaimer:'To protect your payment, never transfer money or communicate outside of the e_nyumbani website or app.',
+    identity:'Verified',
+    phone_number:'+25410-000-000',
+    email:'josephngigi775@gmail.com',
+    whatsapp:'+25410-000-000'
+
+    }
 
 ]
 

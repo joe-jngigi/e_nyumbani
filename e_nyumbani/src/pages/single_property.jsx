@@ -1,6 +1,5 @@
 import React from 'react'
-import PropertyDesc from '../components/about_property/property_description'
-import Propertygallery from '../components/about_property/property_gallery'
+import {Propertygallery, PropertyDesc} from '../components/utilsActions/imports' 
 
 function SingleProperty() {
   return (

@@ -1,3 +1,6 @@
+.prop-desc{
+    height: auto;
+}
     /*PHOTO GALLERY*/
 .photo-g{
     display: grid;
@@ -54,6 +57,37 @@
 .property-desc{
     background-color: var(--clr-white);
 }
+.bookings{
+    display: grid;
+    grid-template-columns: 1fr 35%;
+}
+.book{
+    background-color: var(--clr-primary-10);
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+}
+.guest-c{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.count-btn{
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      
+}
+.c-btn{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.g-label{
+    
+}
+.g-label p{
+    line-height: 1px;
+}
 
 @media screen and (min-width:800px) {
     /*PHOTO GALLERY*/
@@ -74,9 +108,11 @@
         
     }
     /*AMENITIES*/
-    .amenities ul {
+    .amenities{
         display: flex;
-        flex-wrap: wrap;
+    }
+    div li{
+        background-color: #6f48eb;
     }
     /*CALENDAR*/ 
     .react-calendar {
@@ -271,6 +307,23 @@
         border-bottom-right-radius: 6px;
         background: #6f48eb;
         color: white;
+    }
+    /*OWNERS INFO*/
+    .o-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .host-heading{
+        display: flex;
+        justify-content: space-between;
+        color: var(--clr-primary-1);
+    }
+    .about{
+        padding-top: 30px;
+    }
+    .user-review{
+        color: var(--clr-black);
     }
 
     /*MPS*/
