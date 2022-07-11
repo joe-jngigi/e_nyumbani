@@ -231,10 +231,10 @@ export const propertyFeatures =[
     'linen',
     'Ensuite',
     'bathroomsHangers',
-  ]
+  ],
   },
   {
-    id: 2,
+    id: 3,
     heading: 'Facilities',
     item1:[
     'Free Parking on Premises',
@@ -245,53 +245,22 @@ export const propertyFeatures =[
     'Pool',]
   },
   {
-    id: 3,
+    id: 4,
     heading: 'Security Features',
-    item1:'Doorman',
-    item2:'CCTV',
-    item3:'Security dogs',
-    item4:'Electric fence',
+    item1:['Doorman',
+    'CCTV',
+    'Security dogs',
+    'Electric fence',]
   },
   {
-    id: 4,
+    id: 5,
     heading: 'Terms and Conditions',
-    item1:'No smoking',
-    item1:'No parties allowed',
-    item1:'Pets are allowed',
+    item1:['No smoking',
+    'No parties allowed',
+    'Pets are allowed',]
   },
 ]
-export const eachpropertyFeatures =[
 
-  [
-    'Internet and WiFi',
-    'TV',
-    'Air conditioning',
-    'Private fully equped kitchen',
-    'Long term stays allowed',
-],
-  {
-    id: 2,
-    item1:['Free Parking on Premises',
-    ' Airport Shuttle',
-    'Housekeeping',
-    'Elevator in Building',
-    'Gym',
-    'Pool',]
-  },
-  {
-    id: 3,
-    item1:'Doorman',
-    item2:'CCTV',
-    item3:'Security dogs',
-    item4:'Electric fence',
-  },
-  {
-    id: 4,
-    item1:'No smoking',
-    item1:'No parties allowed',
-    item1:'Pets are allowed',
-  },
-]
 export const guestCount =[
   {
     id: 1,
@@ -300,7 +269,7 @@ export const guestCount =[
     count: 0,
   },
   {
-    id: 3,
+    id: 2,
     text: 'Children',
     age: '3-15',
     count: 0,

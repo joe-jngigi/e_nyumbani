@@ -56,8 +56,8 @@ const Navbar = () => {
             <Link className='host' to ='#'>
                 Become a Host
             </Link>
-            <Link to = '#'>
-                <a href="#" className='login-btn' >icon</a>
+            <Link to = '#' className='login-btn'>
+                icon
             </Link>
         </div>
     </div>

@@ -1,10 +1,9 @@
 import React from 'react'
 import Bookingcard from '../utilsActions/booking_card'
 import {Link} from 'react-router-dom'
-import { ownerInfo,propertyFeatures,eachpropertyFeatures } from '../../data'
+import { ownerInfo,propertyFeatures,} from '../../data'
 function PropertyDesc() {
-    const oneItem = propertyFeatures.item1.map(eachItem)
-    console.log(oneItem)
+
   return (
     <section className="property-desc">
         <main className="cent-container prop-desc">
@@ -36,13 +35,19 @@ function PropertyDesc() {
                 What this place offers
                 {
                     propertyFeatures.map((listFeature) =>{
-                        const {id, heading,} = listFeature
+                        const {id, heading,item1} = listFeature
                         return(
                             <div key={id}>
                                 <h5>{heading}</h5>
-                                <ul>
-                                        <li></li>
-                                </ul>
+                                    {
+                                        Object.keys(item1).map((key) =>{
+                                            console.log(key)
+                                            console.log(item1[key])
+                                            return(
+                                                <li> {[ item1[key]]}</li>
+                                            );
+                                        })
+                                    }                      
                             </div>
                         )
                     })
@@ -61,8 +66,8 @@ function PropertyDesc() {
                         <div key={id} className="o-info">
                             <div className="host-about p-2">
                                 <span className='host-heading'>
-                                <Link to = '#'>
-                                    <a href="#" className='login-btn'>icon</a>
+                                <Link to = '#' className='login-btn'>
+                                    icon
                                 </Link>
                                 <div className="username">
                                     <h4>{name}</h4>

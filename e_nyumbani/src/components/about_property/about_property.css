@@ -111,8 +111,8 @@
     .amenities{
         display: flex;
     }
-    div li{
-        background-color: #6f48eb;
+    .amenities li{
+        
     }
     /*CALENDAR*/ 
     .react-calendar {
