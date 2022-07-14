@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaBehance, FaFacebook, FaLinkedin,GiDiamondHard, FaTwitter } from 'react-icons/fa'
 export const links = [
   {
     id: 1,
@@ -171,6 +171,115 @@ export const services = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
   },
 ]
+export const propertiesCardInfo = [
+  {
+    id: 1,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 799,
+  },
+  {
+    id: 2,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    pric:'dhgdfgghdf',
+    rating: 0,
+  },
+  {
+    id: 3,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 0,
+  },
+  {
+    id: 4,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 0,
+  },
+  {
+    id: 5,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 0,
+  },
+  {
+    id: 6,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 0,
+  },
+  {
+    id: 7,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 0,
+  },
+  {
+    id: 8,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 0,
+  },
+  {
+    id: 9,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 0,
+  },
+  {
+    id: 10,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 0,
+  },
+  {
+    id: 11,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 0,
+  },
+  {
+    id: 12,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 0,
+  },
+
+  {
+    id: 13,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 0,
+  },
+  {
+    id: 14,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 0,
+  },
+  {
+    id: 15,
+    image_url:'https://dl.airtable.com/.attachmentThumbnails/89ba7458c24252be77f5a835dd398880/c13ef359?ts=1657746819&amp;userId=usrQMwWEPx18KgLcP&amp;cs=1ff50cff705700ed' ,  
+    location:'Nairobi, Kenya',
+    price:'2999.00',
+    rating: 0,
+  },
+]
 export const faqQuestions = [
   {
     id: 1,
@@ -231,18 +340,7 @@ export const propertyFeatures =[
     'linen',
     'Ensuite',
     'bathroomsHangers',
-  ],
-  },
-  {
-    id: 3,
-    heading: 'Facilities',
-    item1:[
-    'Free Parking on Premises',
-    ' Airport Shuttle',
-    'Housekeeping',
-    'Elevator in Building',
-    'Gym',
-    'Pool',]
+  ]
   },
   {
     id: 4,
@@ -258,6 +356,17 @@ export const propertyFeatures =[
     item1:['No smoking',
     'No parties allowed',
     'Pets are allowed',]
+  },
+    {
+    id: 3,
+    heading: 'Facilities',
+    item1:[
+    'Free Parking on Premises',
+    ' Airport Shuttle',
+    'Housekeeping',
+    'Elevator in Building',
+    'Gym',
+    'Pool',]
   },
 ]
 

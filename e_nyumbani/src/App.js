@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import About from "./pages/about_contacts";
 import PropertyList from "./pages/property_listing";
 import SingleProperty from "./pages/single_property";
+import AuthenticateUser from "./pages/user_auth";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <Route path='/about' element = {<About/>}/>
         <Route path="/property" element = {<PropertyList/>}/>
         <Route path='/about_property' element = {<SingleProperty/>}/>
+        <Route path='/authenticate_user' element = {<AuthenticateUser/>}/>
       </Routes>
       <Footer/>
     </Router>

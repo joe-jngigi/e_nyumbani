@@ -13,11 +13,16 @@ import Faqsaccordion from "../about_components/faq_accordion"
 import Questions from "../about_components/questions"
 
 import ListingHeader from "../property_listing/head_property_list"
+import PropertiesList from "../property_listing/property_list"
+import ListMenuPanel from "../property_listing/property_sort"
 
 import Propertygallery from "../about_property/property_gallery"
 import PropertyDesc from "../about_property/property_description"
 
 import Bookingcard from "./booking_card"
+
+import {HostLogin,HostRegister} from "../authenticate_logins/host_login"
+
 export{
     FeaturedProducts,
     Navbar,
@@ -35,4 +40,11 @@ export{
     PropertyDesc,
     ListingHeader,
     Bookingcard,
+    
+    PropertiesList,
+    ListMenuPanel,
+
+    HostLogin,
+    HostRegister,
+    
 }

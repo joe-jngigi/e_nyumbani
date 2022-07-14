@@ -1,59 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {ListMenuPanel, PropertiesList} from '../utilsActions/imports'
 import './property_listing.css'
 function HeadProperty() {
   return (
-    <section title = 'about_product' className="mainHeadList">
+    <section title = 'about_product' className="mainHeadList py-3">
         <main className="cent-container">
             <h2>Property Listing</h2>
             <div className="list-cont">
-              <article className="menu-panel">
-                <div className="liist">
-                  <ul>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                  </ul>
-                </div>
-              </article>
-              <div className="content-panel">
-                <div className="oone">
-                   <Link className='btn' to = '/about_property'>View this property</Link>
-                </div>
-                <div className="oone">
-                  
-                </div>
-                <div className="oone">
-                  
-                </div>
-                <div className="oone">
-                  
-                </div>
-                <div className="oone">
-                  
-                </div>
-                <div className="oone">
-                  
-                </div>
-                <div className="oone">
-                  
-                </div>
-                <div className="oone">
-                  
-                </div>
-                <div className="oone">
-                  
-                </div>
-                <div className="oone">
-                  
-                </div>
-                <div className="oone">
-                  
-                </div>
-              </div>
+              <ListMenuPanel/>
+              <PropertiesList/>
             </div>
         </main>
     </section>

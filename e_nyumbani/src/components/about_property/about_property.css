@@ -108,11 +108,32 @@
         
     }
     /*AMENITIES*/
+    .p-a h4{
+        padding-top: 20px;
+    }
+    .p-amenities{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
+        gap: 20px;
+        flex-wrap: wrap;
+
+    }
     .amenities{
         display: flex;
+        flex-direction: column;
+        
     }
     .amenities li{
-        
+        display: flex;
+        list-style:circle;
+    }
+    input:checked
+
+    /*BOOKING*/
+    .p-b h4{
+    padding-top: 20px;
     }
     /*CALENDAR*/ 
     .react-calendar {

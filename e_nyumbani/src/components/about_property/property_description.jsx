@@ -30,31 +30,44 @@ function PropertyDesc() {
                 <hr />
             </div>
             <div className="underline"></div>
-            <div className="amenities">
+            <div className='p-a'>
                 <h3><span>/</span>&nbsp;Features</h3>
-                What this place offers
+                <div className="border"></div>
+                <h4>We offer the following amenities:</h4>
+                <article className='p-amenities'>
                 {
                     propertyFeatures.map((listFeature) =>{
                         const {id, heading,item1} = listFeature
                         return(
+                            
                             <div key={id}>
-                                <h5>{heading}</h5>
+                               <h5><input type="checkbox" name="" id="" />{heading}</h5>
+                                <ul className="amenities">
+                                     
                                     {
                                         Object.keys(item1).map((key) =>{
                                             console.log(key)
                                             console.log(item1[key])
                                             return(
-                                                <li> {[ item1[key]]}</li>
+                                                    <li> {[ item1[key]]}</li>
                                             );
                                         })
-                                    }                      
+                                    }   
+                                </ul>                   
                             </div>
+                            
                         )
                     })
                 }
+                </article>
             </div>
 
-            <Bookingcard/>
+            <div className="p-b my-3">
+                <h3><span>/</span>&nbsp;Reserve a place</h3>
+                <div className="border"></div>
+                <h4>Reserve yourself the place to feel at home</h4>
+                <Bookingcard/>
+            </div>
 
             <div className="owners py-2">
             <h3><span>/</span>&nbsp;About host</h3>

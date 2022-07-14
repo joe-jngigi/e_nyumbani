@@ -1,24 +1,73 @@
-
+.products {
+    display: grid;
+    gap: 3rem 1.5rem;
+    margin: 4rem auto;
+    
+}
+.mainHeadList{
+    background-color: var(--clr-white);
+}
 @media screen and (min-width:800px) {
     .list-cont{
         display:grid;
-        grid-template-columns:20% 80%;
+        grid-template-columns:15% 85%;
         
     }
     .menu-panel{
 
     }
     .content-panel{
-        background-color: aqua;
-        padding: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 20px;
+        display: grid;
+        gap: 2rem 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: var(--radius);
+       height: auto;
     }
-    .oone{
-        width: 30%;
-        height: 200px;
-        background-color: blue;
+    .productCard{
+        height: auto;
+        border-radius: var(--radius);
+    }
+    .productCard .cardImg{
+        position: relative;
+        background: var(--clr-primary-9);
+        border-radius: var(--radius);
+        height: 250px;
+    }
+    .productCard img{
+        transition: var(--transition);
+        
+        border-radius: var(--radius);
+        object-fit:cover;
+        height: 100%;
+        width: 100%;
+    }
+    .cardImg:hover img{
+        opacity: 0.5;
+    }
+    .cardImg .p-img-l{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        cursor: pointer
+        
+    }
+    .cardImg:hover .p-img-l{
+         opacity: 1;
+    }
+
+    .propInfo{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        line-height: 1.5rem;
+        padding: 0.8rem;
+        padding-left: 0rem;
+    }
+    .propInfo h4{
+        font-weight: 500;
+    }
+    .propInfo p{
+        margin: 0px;
     }
 }
