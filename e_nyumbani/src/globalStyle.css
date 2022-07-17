@@ -393,6 +393,14 @@ textarea {
   border-top-color: var(--clr-primary-5);
   animation: spinner 1.2s linear infinite;
 }
+
+/* display-products */
+.display-products{
+  background-color: white;
+  padding: 2rem; 
+  margin: 2rem;
+  border: 1px solid red;
+}
 @keyframes spinner {
   to {
     transform: rotate(360deg);
