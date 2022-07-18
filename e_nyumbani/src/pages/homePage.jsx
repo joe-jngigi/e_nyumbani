@@ -1,4 +1,3 @@
-import GoogleHandler from "../components/users/signIn";
 import {
   HeadSec,
   FeaturedProducts,

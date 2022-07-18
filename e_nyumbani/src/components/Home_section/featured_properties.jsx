@@ -3,7 +3,7 @@ import { Error, Loading } from "../utilsActions/imports";
 import { Link } from "react-router-dom";
 import { products_url } from "../../data";
 
-import { db } from "../../firebase"; // update with your path to firestore config
+import { db } from "../../firebase";
 import { collection, getDocs } from "firebase/firestore";
 
 export const getNotes = async () => {

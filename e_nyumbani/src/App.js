@@ -6,20 +6,24 @@ import About from "./pages/about_contacts";
 import PropertyList from "./pages/property_listing";
 import SingleProperty from "./pages/single_property";
 import AuthenticateUser from "./pages/user_auth";
+import BecomeHost from "./pages/become_host";
+
+
 function App() {
   return (
     <>
-    <Router>
-      <Header />
-      <Routes>
-        <Route path='/' element= {  <HomePage/>}/>
-        <Route path='/about' element = {<About/>}/>
-        <Route path="/property" element = {<PropertyList/>}/>
-        <Route path='/about_property' element = {<SingleProperty/>}/>
-        <Route path='/authenticate_user' element = {<AuthenticateUser/>}/>
-      </Routes>
-      <Footer/>
-    </Router>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/property" element={<PropertyList />} />
+          <Route path="/about_property" element={<SingleProperty />} />
+          <Route path="/authenticate_user" element={<AuthenticateUser />} />
+          <Route path="/become_host" element={<BecomeHost />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }

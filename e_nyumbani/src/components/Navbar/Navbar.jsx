@@ -53,7 +53,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="log-user">
-            <Link className="host" to="/authenticate_user">
+            <Link className="host" to="/become_host">
               Become a Host
             </Link>
             <div>

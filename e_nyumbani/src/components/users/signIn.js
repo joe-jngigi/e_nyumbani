@@ -33,7 +33,7 @@ export default function SignIn() {
   };
   return (
     <div>
-      <button className="button" onClick={googleHandler}>
+      <button className="btn-outline btn btn-primary" onClick={googleHandler}>
         {user ? <span> {user.displayName}</span> : <span>Sign in</span>}
       </button>
     </div>
