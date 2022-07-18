@@ -62,7 +62,7 @@ export default function App() {
 
       <select
         class="form-select m-2"
-        {...register("Category", { required: true })}
+        {...register("category", { required: true })}
       >
         <option value="Office">Office</option>
         <option value="Living room">Living room</option>

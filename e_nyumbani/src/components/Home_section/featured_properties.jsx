@@ -5,6 +5,7 @@ import { products_url } from "../../data";
 
 import { db } from "../../firebase";
 import { collection, getDocs } from "firebase/firestore";
+import ProductsCard from '../ProductsCard/ProductsCard';
 
 export const getNotes = async () => {
   const notesSnapshot = await getDocs(collection(db, "products"));
@@ -43,15 +44,7 @@ const FeaturedProducts = () => {
           {products ? (
             <section>
               {products.map((product) => (
-                <ul key={product.id}>
-                  <li>{product.name}</li>
-                  <li>{product.company}</li>
-                  <li>{product.price}</li>
-                  <li>{product.colors[1]}</li>
-                  <li>{product.shipping}</li>
-                  <li>{product.description}</li>
-                  {/* <img src={product.image} alt={product.image} /> */}
-                </ul>
+                <ProductsCard key={product.id} product={product} />
               ))}
             </section>
           ) : (
