@@ -1,15 +1,22 @@
-import {HeadSec, FeaturedProducts, Profile, DealSect} from '../components/utilsActions/imports'
+import GoogleHandler from "../components/users/signIn";
+import {
+  HeadSec,
+  FeaturedProducts,
+  Profile,
+  DealSect,
+} from "../components/utilsActions/imports";
 
-const HomePage = () =>{
-    return(
-        <>
-        <div>
-            <HeadSec/>
-            <FeaturedProducts/>
-            <Profile/>
-            <DealSect/>
-        </div>
-        </>
-    )
-}
+const HomePage = () => {
+  return (
+    <>
+   
+      <div>
+        <HeadSec />
+        <FeaturedProducts />
+        <Profile />
+        <DealSect />
+      </div>
+    </>
+  );
+};
 export default HomePage;
