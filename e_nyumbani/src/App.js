@@ -6,6 +6,7 @@ import About from "./pages/about_contacts";
 import PropertyList from "./pages/property_listing";
 import SingleProperty from "./pages/single_property";
 import AuthenticateUser from "./pages/user_auth";
+
 import BecomeHost from "./pages/become_host";
 import ProductDetails from "./pages/product_details";
 
@@ -27,6 +28,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
+
     </>
   );
 }

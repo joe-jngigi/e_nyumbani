@@ -11,7 +11,8 @@ export const getNotes = async () => {
   const notesSnapshot = await getDocs(collection(db, "products"));
   const notesList = notesSnapshot.docs.map((doc) => doc.data());
   return notesList;
-};
+}
+
 
 const FeaturedProducts = () => {
   const [products, setProducts] = useState([]);
@@ -25,13 +26,12 @@ const FeaturedProducts = () => {
           id: doc.id,
         }))
       );
-      // console.log(productsData);
+      
     };
 
     getData();
   }, []);
 
-  
   return (
     <section className="wrap-around py-5  border">
       <div className="cent-container">
@@ -39,6 +39,7 @@ const FeaturedProducts = () => {
           <h2>Featured Homes!</h2>
           <div className="underline"></div>
         </div>
+
         {/* =============================================================================== */}
         {/* display products */}
         <main className="container ">
@@ -58,6 +59,7 @@ const FeaturedProducts = () => {
         </main>
         {/* end of display products */}
         <hr/>
+
         <Error />
         <div className="Link container">
           <Link to="#" className="btn">
@@ -68,4 +70,5 @@ const FeaturedProducts = () => {
     </section>
   );
 };
+
 export default FeaturedProducts;
