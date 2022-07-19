@@ -3,8 +3,9 @@ import { Error, Loading } from "../utilsActions/imports";
 import { Link } from "react-router-dom";
 import { products_url } from "../../data";
 
-import { db } from "../../firebase"; // update with your path to firestore config
+import { db } from "../../firebase";
 import { collection, getDocs } from "firebase/firestore";
+import ProductsCard from "../ProductsCard/ProductsCard";
 
 export const getNotes = async () => {
   const notesSnapshot = await getDocs(collection(db, "products"));
@@ -30,40 +31,37 @@ const FeaturedProducts = () => {
 
     getData();
   }, []);
-  console.log(products);
+
   return (
-    <section className="wrap-around py-5">
+    <section className="wrap-around py-5  border">
       <div className="cent-container">
         <div className="title">
           <h2>Featured Homes!</h2>
           <div className="underline"></div>
         </div>
-        <h3>Products</h3>
-        {/* =============================================================================== 
+
+        {/* =============================================================================== */}
         {/* display products */}
-        <main className="display-products">
-          {products ? (
-            <section>
-              {products.map((product) => (
-                <ul key={product.id}>
-                  <li>{product.name}</li>
-                  {/* <li>{product.company}</li> */}
-                  <li>{product.price}</li>
-                  {/* <li>{product.colors[1]}</li>
-                  <li>{product.shipping}</li>
-                  <li>{product.description}</li> */}
-                  {/* <img src={product.image} alt={product.image} /> */}
-                </ul>
-              ))}
-            </section>
-          ) : (
-            <Loading />
-          )}
-        </main> 
-      
-   
+        <main className="container ">
+          <section className="row">
+            <div className=" col-sm-2 col-md-4">
+              {products ? (
+                <>
+                  {products.map((product) => (
+                    <ProductsCard key={product.id} product={product} />
+                  ))}
+                </>
+              ) : (
+                <Loading />
+              )}
+            </div>
+          </section>
+        </main>
+        {/* end of display products */}
+        <hr/>
+
         <Error />
-        <div className="Link">
+        <div className="Link container">
           <Link to="#" className="btn">
             All featured homes
           </Link>
