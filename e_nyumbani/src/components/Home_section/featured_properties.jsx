@@ -5,7 +5,7 @@ import { products_url } from "../../data";
 
 import { db } from "../../firebase";
 import { collection, getDocs } from "firebase/firestore";
-import ProductsCard from '../ProductsCard/ProductsCard';
+import ProductsCard from "../ProductsCard/ProductsCard";
 
 export const getNotes = async () => {
   const notesSnapshot = await getDocs(collection(db, "products"));
@@ -30,30 +30,36 @@ const FeaturedProducts = () => {
 
     getData();
   }, []);
+
+  
   return (
-    <section className="wrap-around py-5">
+    <section className="wrap-around py-5  border">
       <div className="cent-container">
         <div className="title">
           <h2>Featured Homes!</h2>
           <div className="underline"></div>
         </div>
-        <h3>Products</h3>
         {/* =============================================================================== */}
         {/* display products */}
-        <main className="display-products">
-          {products ? (
-            <section>
-              {products.map((product) => (
-                <ProductsCard key={product.id} product={product} />
-              ))}
-            </section>
-          ) : (
-            <Loading />
-          )}
+        <main className="container ">
+          <section className="row">
+            <div className=" col-sm-2 col-md-4">
+              {products ? (
+                <>
+                  {products.map((product) => (
+                    <ProductsCard key={product.id} product={product} />
+                  ))}
+                </>
+              ) : (
+                <Loading />
+              )}
+            </div>
+          </section>
         </main>
         {/* end of display products */}
+        <hr/>
         <Error />
-        <div className="Link">
+        <div className="Link container">
           <Link to="#" className="btn">
             All featured homes
           </Link>
