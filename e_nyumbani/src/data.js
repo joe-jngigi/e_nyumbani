@@ -11,11 +11,7 @@ export const links = [
     url: '/about',
     text: 'about',
   },
-  {
-    id: 3,
-    url: '/property',
-    text: 'Property Listing',
-  },
+
 
 ]
 
