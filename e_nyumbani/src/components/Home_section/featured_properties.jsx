@@ -10,7 +10,8 @@ export const getNotes = async () => {
   const notesSnapshot = await getDocs(collection(db, "products"));
   const notesList = notesSnapshot.docs.map((doc) => doc.data());
   return notesList;
-};
+}
+
 
 const FeaturedProducts = () => {
   const [products, setProducts] = useState([]);
@@ -24,11 +25,12 @@ const FeaturedProducts = () => {
           id: doc.id,
         }))
       );
-      // console.log(productsData);
+      
     };
 
     getData();
   }, []);
+  console.log(products);
   return (
     <section className="wrap-around py-5">
       <div className="cent-container">
@@ -37,7 +39,7 @@ const FeaturedProducts = () => {
           <div className="underline"></div>
         </div>
         <h3>Products</h3>
-        {/* =============================================================================== */}
+        {/* =============================================================================== 
         {/* display products */}
         <main className="display-products">
           {products ? (
@@ -45,11 +47,11 @@ const FeaturedProducts = () => {
               {products.map((product) => (
                 <ul key={product.id}>
                   <li>{product.name}</li>
-                  <li>{product.company}</li>
+                  {/* <li>{product.company}</li> */}
                   <li>{product.price}</li>
-                  <li>{product.colors[1]}</li>
+                  {/* <li>{product.colors[1]}</li>
                   <li>{product.shipping}</li>
-                  <li>{product.description}</li>
+                  <li>{product.description}</li> */}
                   {/* <img src={product.image} alt={product.image} /> */}
                 </ul>
               ))}
@@ -57,8 +59,9 @@ const FeaturedProducts = () => {
           ) : (
             <Loading />
           )}
-        </main>
-        {/* end of display products */}
+        </main> 
+      
+   
         <Error />
         <div className="Link">
           <Link to="#" className="btn">
@@ -69,4 +72,5 @@ const FeaturedProducts = () => {
     </section>
   );
 };
+
 export default FeaturedProducts;

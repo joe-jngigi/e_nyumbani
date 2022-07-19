@@ -6,6 +6,8 @@ import About from "./pages/about_contacts";
 import PropertyList from "./pages/property_listing";
 import SingleProperty from "./pages/single_property";
 import AuthenticateUser from "./pages/user_auth";
+import HostAdmin from "./pages/host_admin";
+
 function App() {
   return (
     <>
@@ -17,6 +19,7 @@ function App() {
         <Route path="/property" element = {<PropertyList/>}/>
         <Route path='/about_property' element = {<SingleProperty/>}/>
         <Route path='/authenticate_user' element = {<AuthenticateUser/>}/>
+        <Route path='/host_admin' element = {<HostAdmin/>}/>
       </Routes>
       <Footer/>
     </Router>

@@ -23,6 +23,8 @@ import Bookingcard from "./booking_card"
 
 import {HostLogin,HostRegister} from "../authenticate_logins/host_login"
 
+import HostAdminInput from "../Admin/host_admin_comp"
+
 export{
     FeaturedProducts,
     Navbar,
@@ -46,5 +48,6 @@ export{
 
     HostLogin,
     HostRegister,
+    HostAdminInput,
     
 }

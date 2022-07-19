@@ -21,7 +21,7 @@ export const HostLogin = () =>{
             <input className='input' type="password" placeholder="Password" {...register("Mobile number", {required: true, minLength: 6, maxLength: 12})} />
 
             <input className='btn' type="submit" />
-          
+            <Link to = '/host_admin'className="btn">Enter</Link>
         </form>
     </div>
   )
